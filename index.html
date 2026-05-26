@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#7a1736" />
+  <title>أسرار عيد الوكرة</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="sparkles"></div>
+
+  <header class="topbar">
+    <div class="location">📍 قطر QA</div>
+    <div class="brand">
+      <img src="assets/school-logo.jpg" alt="شعار مدرسة السلام" />
+      <div>
+        <h2>أسرار عيد الوكرة</h2>
+        <p>مدرسة السلام الابتدائية للبنات</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="game-shell">
+    <section class="hero-card">
+      <div class="hero-text">
+        <span class="badge">مغامرة سلامة لإنقاذ الفرح</span>
+        <h1>أسرار عيد الوكرة</h1>
+        <p>منصة تعليمية تفاعلية تجمع بين اللغة العربية والهوية الوطنية القطرية داخل عالم مليء بالكنوز والتحديات والمغامرات.</p>
+        <div class="hero-buttons">
+          <button onclick="scrollToMap()">ابدئي المغامرة</button>
+          <button class="ghost" onclick="openModal(1)">جرّبي سؤالًا</button>
+        </div>
+      </div>
+      <div class="salama-box">
+        <img src="assets/salama.svg" alt="سلامة" />
+        <div class="speech">مرحبًا يا بطلة! هيا نكتشف أسرار الوكرة ونتعلم ونلعب معًا ❤</div>
+      </div>
+    </section>
+
+    <section class="dashboard">
+      <aside class="passport">
+        <h3>جواز بطلة الوكرة</h3>
+        <div class="avatar">صورة البطلة</div>
+        <label>الاسم: <span>....................</span></label>
+        <label>الصف: <span>....................</span></label>
+        <label>الفريق: <span>....................</span></label>
+        <h4>الأختام</h4>
+        <div class="stamps" id="stamps">
+          <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+        </div>
+      </aside>
+
+      <section class="map-board" id="map">
+        <div class="map-title">خريطة مدينة الوكرة</div>
+        <div class="sea"></div>
+        <div class="islands"></div>
+        <div class="route"></div>
+
+        <button class="gate gate1" onclick="openModal(1)">
+          <img src="assets/gate-pearl.svg" alt="">
+          <strong>كورنيش اللؤلؤ</strong>
+          <small>لغة عربية</small>
+        </button>
+
+        <button class="gate gate2" onclick="openModal(2)">
+          <img src="assets/gate-souq.svg" alt="">
+          <strong>سوق الفرح القديم</strong>
+          <small>مفردات وتراكيب</small>
+        </button>
+
+        <button class="gate gate3" onclick="openModal(3)">
+          <img src="assets/gate-stars.svg" alt="">
+          <strong>ميناء النجوم</strong>
+          <small>ألغاز وتحديات</small>
+        </button>
+
+        <button class="gate gate4" onclick="openModal(4)">
+          <img src="assets/gate-heritage.svg" alt="">
+          <strong>حديقة التراث</strong>
+          <small>هوية قطرية</small>
+        </button>
+
+        <button class="gate gate5" onclick="openModal(5)">
+          <img src="assets/gate-secret.svg" alt="">
+          <strong>برج سلامة السري</strong>
+          <small>مراحل أسطورية</small>
+        </button>
+      </section>
+
+      <aside class="progress-card">
+        <h3>تقدمكِ في المغامرة</h3>
+        <div class="score-star">⭐</div>
+        <div class="score" id="score">0</div>
+        <p>نقطة</p>
+        <div class="mini-stamps" id="miniStamps">☆ ☆ ☆ ☆ ☆</div>
+        <div class="tools">
+          <button onclick="resetGame()">إعادة البدء</button>
+          <button onclick="playTone()">صوت النجاح</button>
+        </div>
+      </aside>
+    </section>
+
+    <section class="tool-row">
+      <button>⏳ تحديات الوقت</button>
+      <button>🗺️ خريطة الوكرة</button>
+      <button>🗝️ المفاتيح الذهبية</button>
+      <button>🔎 البحث عن الكنز</button>
+      <button>🎡 عجلة الحظ</button>
+      <button>🎴 بطاقات سرية</button>
+    </section>
+  </main>
+
+  <div class="modal" id="modal">
+    <div class="modal-card">
+      <button class="close" onclick="closeModal()">×</button>
+      <span class="badge" id="stageName">المرحلة</span>
+      <h2 id="questionText">السؤال</h2>
+      <div class="choices" id="choices"></div>
+      <p class="feedback" id="feedback"></p>
+    </div>
+  </div>
+
+  <script src="js/questions.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
