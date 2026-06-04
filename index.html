@@ -1,0 +1,17 @@
+<!DOCTYPE html><html lang="ar" dir="rtl"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>أسرار عيد الوكرة</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/style.css"/></head><body>
+<main class="app"><section class="screen">
+<div class="top"><div class="chip">📍 قطر QA</div><div class="brand"><img src="assets/school-logo.jpg"/><div><h2>أسرار عيد الوكرة</h2><p>مدرسة السلام الابتدائية للبنات</p></div></div></div>
+<section class="hero"><div class="hero-text"><span>مغامرة سلامة لإنقاذ الفرح</span><h1>أسرار عيد الوكرة</h1><p>تطبيق تعليمي تفاعلي يجمع اللغة العربية والهوية الوطنية القطرية في مغامرة مليئة بالبوابات والكنوز والتحديات.</p><button onclick="document.querySelector('.map-wrap').scrollIntoView({behavior:'smooth'})">ابدئي المغامرة</button></div></section>
+<section class="layout"><aside class="card side"><h3>جواز بطلة الوكرة</h3><div class="avatar">صورة البطلة</div><p>الاسم: ....................</p><p>الصف: ....................</p><p>الفريق: ....................</p><h4>الأختام</h4><div class="stamps" id="stamps">☆ ☆ ☆ ☆ ☆</div></aside>
+<section class="map-wrap"><h2>خريطة مدينة الوكرة</h2><div class="portal-map">
+<button class="portal p1" onclick="openGate(1)"><b>🐚</b><strong>كورنيش اللؤلؤ</strong><small>لغة عربية</small></button>
+<button class="portal p2" onclick="openGate(2)"><b>🏮</b><strong>سوق الفرح القديم</strong><small>مفردات وتراكيب</small></button>
+<button class="portal p3" onclick="openGate(3)"><b>⭐</b><strong>ميناء النجوم</strong><small>هوية قطرية</small></button>
+<button class="portal p4" onclick="openGate(4)"><b>🌴</b><strong>حديقة التراث</strong><small>قيم وتراث</small></button>
+<button class="portal p5" onclick="openGate(5)"><b>🗝️</b><strong>برج سلامة السري</strong><small>تحديات أسطورية</small></button>
+</div></section>
+<aside class="card progress"><h3>تقدمكِ في المغامرة</h3><div class="star">⭐</div><div class="score" id="score">0</div><p>نقطة</p><button onclick="resetGame()">إعادة البدء</button><button onclick="playTone()">صوت النجاح</button></aside></section>
+<section class="tools"><button>⏳ تحديات الوقت</button><button>🗺️ خريطة الوكرة</button><button>🗝️ المفاتيح الذهبية</button><button>🔎 البحث عن الكنز</button><button>🎡 عجلة الحظ</button><button>🎴 بطاقات سرية</button></section>
+</section></main>
+<div class="modal" id="modal"><div class="modal-card"><button class="close" onclick="closeModal()">×</button><span class="gate-label" id="gateLabel"></span><h2 id="question"></h2><div id="choices" class="choices"></div><p id="feedback"></p><button class="next" onclick="nextQuestion()">سؤال جديد من نفس البوابة</button></div></div>
+<script src="js/questions.js"></script><script src="js/app.js"></script></body></html>
