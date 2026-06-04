@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="430" viewBox="0 0 360 430">
+<defs>
+<linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6b3f1f"/><stop offset="1" stop-color="#d8aa48"/></linearGradient>
+<filter id="s"><feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#000" flood-opacity=".25"/></filter>
+</defs>
+<g filter="url(#s)">
+<path d="M65 390 L65 170 C65 93 118 40 180 40 C242 40 295 93 295 170 L295 390 Z" fill="url(#g)" stroke="#ffe3a0" stroke-width="9"/>
+<path d="M92 390 L92 178 C92 118 132 75 180 75 C228 75 268 118 268 178 L268 390 Z" fill="rgba(255,255,255,.12)" stroke="rgba(255,255,255,.35)" stroke-width="3"/>
+<circle cx="180" cy="205" r="78" fill="rgba(255,255,255,.16)" stroke="#ffe3a0" stroke-width="5"/>
+<text x="180" y="225" font-size="78" text-anchor="middle" dominant-baseline="middle">🌴</text>
+<circle cx="180" cy="340" r="26" fill="#ffe3a0"/>
+</g>
+</svg>

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="740" viewBox="0 0 520 740">
+<defs>
+<linearGradient id="dress" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0%" stop-color="#8a1538"/>
+<stop offset="100%" stop-color="#4b0920"/>
+</linearGradient>
+<linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0%" stop-color="#ffe7a6"/>
+<stop offset="55%" stop-color="#d8aa48"/>
+<stop offset="100%" stop-color="#8b5d12"/>
+</linearGradient>
+<filter id="shadow"><feDropShadow dx="0" dy="18" stdDeviation="16" flood-color="#000" flood-opacity=".25"/></filter>
+</defs>
+<g filter="url(#shadow)">
+<path d="M150 315 C105 420 80 590 110 710 L410 710 C440 595 412 420 370 315 Z" fill="url(#dress)"/>
+<path d="M168 335 C135 430 120 575 145 685" fill="none" stroke="url(#gold)" stroke-width="12" stroke-linecap="round"/>
+<path d="M352 335 C385 430 400 575 375 685" fill="none" stroke="url(#gold)" stroke-width="12" stroke-linecap="round"/>
+<path d="M260 330 L260 700" stroke="url(#gold)" stroke-width="14" stroke-linecap="round"/>
+<path d="M170 400 C230 430 290 430 350 400" fill="none" stroke="url(#gold)" stroke-width="10" stroke-linecap="round"/>
+<circle cx="260" cy="190" r="96" fill="#ffd6bd" stroke="#5a2a1f" stroke-width="4"/>
+<path d="M160 188 C150 95 210 45 270 48 C350 52 390 110 357 190 C330 120 210 120 160 188Z" fill="#24120f"/>
+<path d="M170 180 C220 130 315 122 356 180 C350 90 285 40 220 58 C175 72 150 115 170 180Z" fill="#2e1a16"/>
+<circle cx="225" cy="195" r="13" fill="#211"/>
+<circle cx="295" cy="195" r="13" fill="#211"/>
+<circle cx="221" cy="190" r="4" fill="#fff"/>
+<circle cx="291" cy="190" r="4" fill="#fff"/>
+<path d="M228 242 C248 260 279 260 299 242" fill="none" stroke="#8a3d34" stroke-width="7" stroke-linecap="round"/>
+<path d="M350 210 C430 250 468 315 445 375 C420 435 365 400 340 340" fill="url(#dress)" stroke="url(#gold)" stroke-width="8"/>
+<path d="M170 210 C85 260 50 320 82 375 C115 430 165 392 190 340" fill="url(#dress)" stroke="url(#gold)" stroke-width="8"/>
+<path d="M115 330 C180 355 340 355 405 330" fill="none" stroke="url(#gold)" stroke-width="10"/>
+<circle cx="260" cy="325" r="20" fill="url(#gold)"/>
+<path d="M150 475 L370 475 M135 560 L385 560 M125 640 L395 640" stroke="url(#gold)" stroke-width="6" stroke-dasharray="10 14" opacity=".85"/>
+<path d="M198 105 C250 80 310 88 350 130" fill="none" stroke="url(#gold)" stroke-width="8" stroke-linecap="round"/>
+</g>
+<g>
+<circle cx="82" cy="95" r="14" fill="#ffd86a"/><path d="M82 62 L90 86 L116 86 L95 101 L103 126 L82 111 L61 126 L69 101 L48 86 L74 86Z" fill="#ffd86a"/>
+<circle cx="420" cy="120" r="10" fill="#ffd86a"/><path d="M420 90 L427 112 L450 112 L431 125 L438 148 L420 134 L402 148 L409 125 L390 112 L413 112Z" fill="#ffd86a"/>
+</g>
+</svg>
